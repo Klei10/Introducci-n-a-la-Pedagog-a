@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    background: linear-gradient(to bottom, rgba(226,226,226,.3) 0%, rgba(219,219,219,.2) 50%, rgba(254, 254, 254, 1)100%),url(../img/escuela.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: antiquewhite;
+}
+
+#titulo{
+    position: relative;
+    top: 10rem;
+    font-family: 'Merienda', cursive;
+}
+
+#parteDos{
+    background: linear-gradient(to top, rgba(254, 254, 254, 1)0%, rgba(219,219,219,.5)50%, rgba(254, 254, 254, 1)100%),url(../img/pencil.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.previsiones{
+    position: relative;
+    top: 15%;
+}
+
+.nav-tabs > li{
+    margin-bottom: 10px;
+}
+
+.nav-tabs > li > a {
+	color: #3a405b;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	margin-left: 10px;
+    border: 1px #f0f2f7 solid;
+    padding-right: 30px;
+}
+.tab-content{
+    margin-top: 15px;
+}
+.tab-content .tab-pane {
+    padding: 15px;
+    border: 1px solid;
+}
+
+#parteTres{
+    background: linear-gradient(to bottom, rgba(254, 254, 254, 1)0%, rgba(219,219,219,.5)50%, rgba(226,226,226,.3)100%),url(../img/pizarra.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.fines{
+    margin-top: 30px;
+}
+
+strong{
+    color: coral;
+}
+
+@media screen and (max-width: 690px){
+    #header{
+        height: 150%;
+    }
+
+    #titulo{
+        top: 6rem;
+    }
+
+    #parteDos{
+        height: 150%;
+    }
+
+    #parteTres{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #titulo{
+        top: 7rem;
+        font-size: 2rem;
+    }
+    
+    .nav-tabs > li{
+        margin: 0 0 10px 25px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #titulo{
+        font-size: 1.5rem;
+    }
+
+    .previsiones{
+        top: 10%;
+    }
+
+    .nav-tabs{
+        margin-top: .25rem !important;
+    }
+
+    .nav-tabs > li{
+        margin: 0 0 10px 0px;
+    }
+
+    #parteTres{
+        height: auto;
+    }
+}
